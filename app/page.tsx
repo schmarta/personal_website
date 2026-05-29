@@ -9,7 +9,7 @@ function SocialLink({ icon, link } : {
 }) {
     return (
         <div className={`hover:bg-foreground hover:text-background rounded
-                         duration-200 transition-colors text-4xl p-1`}
+                         duration-200 transition-colors text-4xl p-1 cursor-pointer`}
              onClick={ () => open(link) }>
             {icon}
         </div>
