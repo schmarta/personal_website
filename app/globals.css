@@ -1,8 +1,18 @@
 @import "tailwindcss";
 
 :root {
-    --background: #ffffff;
+    --background: #ededed;
     --foreground: #171717;
+}
+
+.split {
+    background: linear-gradient(
+            3deg,
+            #ededed 10%,
+            #ffffff 10%,
+            #ffffff 90%,
+            #ededed 90%
+    );
 }
 
 @theme inline {
@@ -16,14 +26,19 @@
         --background: #0a0a0a;
         --foreground: #ededed;
     }
+
+    .split {
+        background: linear-gradient(
+                3deg,
+                #0a0a0a 10%,
+                #121212 10%,
+                #121212 90%,
+                #0a0a0a 90%
+        );
+    }
 }
 
 body {
     background: var(--background);
     color: var(--foreground);
-}
-
-.split {
-    background: linear-gradient(5deg, var(--foreground) 10%, transparent 10%),
-    linear-gradient(5deg, var(--background) 90%, var(--foreground) 90%);
 }
